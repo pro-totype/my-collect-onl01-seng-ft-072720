@@ -1,11 +1,9 @@
-
-
 def my_collect(array)
-  
-   empty_array = []
-    counter = 0
-      my_collect(empty_array) yield (|x| x*0)
-        counter += 1
-      
-      end
-      end
+  i = 0
+  collect = []
+  while i < array.length
+    collect << yield(array[i])
+    i+=1
+  end
+  collect
+end
