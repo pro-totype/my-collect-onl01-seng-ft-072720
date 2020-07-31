@@ -1,7 +1,10 @@
 
 
 def my_collect(array)
-  i = 0
-  while i < 0 do 
   
-  
+   empty_array = []
+    counter = 0
+      my_collect(empty_array) yield 
+        counter += 1
+      end
+    expect(counter).to eq(0)
